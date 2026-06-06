@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Digital Provenance</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap');
+        
+        body {
+            background-color: #0a0a0a;
+            color: #f4f4f4;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+       .container {
+            max-width: 500px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+        }
+       .hidden {
+            display: none;
+        }
+        label {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #aaa;
+        }
+        input, button {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #333;
+            color: #fff;
+            padding: 10px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 1px solid #fff;
+        }
+        button {
+            margin-top: 20px;
+            border: 1px solid #fff;
+            padding: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Secure Digital Provenance</h1>
+        <p>Zero-knowledge digital vaults for classic automobile collectors.<br>Private Beta. By invitation only.</p>
+
+        <form name="PrivateBeta" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+
+            <div>
+                <label for="name">Name / Family Office</label><br>
+                <input type="text" id="name" name="name" required style="width: 100%;">
+            </div>
+
+            <div>
+                <label for="vehicle">Vehicle Model & Year</label><br>
+                <input type="text" id="vehicle" name="vehicle" required style="width: 100%;">
+            </div>
+
+            <div>
+                <label for="email">Secure Contact Email</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%;">
+            </div>
+
+            <button type="submit">Request Consultation</button>
+        </form>
+    </div>
+
+</body>
+</html>
