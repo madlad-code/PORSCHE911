@@ -1,0 +1,11 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+# Netlify Forms configuration is handled via HTML attributes, 
+# but you can manage form notifications and settings in the Netlify UI.
