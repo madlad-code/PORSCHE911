@@ -1,4 +1,3 @@
+# Minimal config to avoid any interference
 [build]
   publish = "."
-
-# Removed SPA redirect that could interfere with static pages and form submissions.
